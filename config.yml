@@ -1,0 +1,745 @@
+---
+# This is configuration file for font builder and other support scripts.
+# Format is descriped below.
+#
+#
+# # metadata, to generate demo & fontello info dialogs
+# meta:
+#
+#  author: Daniel Buce
+#  homepage: http://...
+#  email: ...
+#  twitter: http://twitter.com/...
+#  dribbble: http://dribbble.com/...
+#  license: SIL
+#  license_url: http://scripts.sil.org/OFL
+#
+#   css-prefix: "icon-"             # prefix for css-generated classes
+#   demo-columns: 4                 # used for html demo page generation
+#
+# # Font headers. All vars from here will be used as font
+# # params in fontforge http://fontforge.sourceforge.net/python.html
+# font:
+#
+#   version: "1.0"
+#
+#   # use !!!small!!! letters a-z, or Opera will fail under OS X
+#   # fontname will be also used as file name.
+#   fontname: myfont
+#
+#   fullname: MyFont
+#   familyname: Myfont
+#
+#   copyright: Copyright (C) 2012 by xxxxxxxx
+#
+#   ascent: 1638
+#   descent: 410
+#   weight: Regular
+#
+#
+# #
+# # Optional. You can apply global rescale + offset to all font glyphs.
+# # Param values ar 0..1, where 1 = 100%. 
+# #
+# transform:
+#   baseline: 0.2                 # baseline for rescale symmetry. Default value
+#                                 # calculated from ascent/decsent
+#   rescale: 0.68                 # rescale glyphs and center around baseline
+#   offset: -0.1                  # shift up/down
+#
+# glyphs:
+#   - file: glyph1_file           # file name, without extention
+#     from: 0xNNN                 # Source code for remapper or merge tool
+#     code: 0xNNN                 # Symbol code 0x - hex
+#     css: icon-gpyph1-name       # For generated CSS
+#     search: [word1, word2]      # Search aliases (array). CSS name will be
+#                                 # included automatically
+#     src: first_font_alias       # alias to font for merge tool
+#                                 # list of aliases in src_fonts section
+#
+#     #
+#     # local transformations, only for this glyph (optional)
+#     #
+#     transform:                  # personal glyph transformation.
+#       rescale_rel               # *_rel - applyed after global.
+#       offset: 0.2               # without *_rel - override global
+#
+# #
+# # Fonts aliases used only in font merge tool
+# #
+# src_fonts:
+#   first_font_alias: "/absolute/path/to/first/font.ttf"
+#
+################################################################################
+#
+
+
+meta:
+  author: MFG Labs
+  homepage: http://www.mfglabs.com/
+  github: https://github.com/MfgLabs/mfglabs-iconset
+  license: SIL
+  license_url: http://scripts.sil.org/OFL
+
+  css_prefix: "icon-"
+  columns: 4
+
+font:
+  version: "1.0"
+
+  # use !!!small!!! letters a-z, or Opera will fail under OS X
+  # fontname will be also used as file name.
+  fontname: mfglabs
+
+  fullname: MFG Labs
+  familyname: MFG Labs
+
+  copyright: Copyright (C) 2012 by Daniel Bruce
+
+  ascent: 850
+  descent: 150
+  weight: Normal
+
+
+glyphs:
+  -
+    css: plus
+    code: 0x2b
+    uid: 63e91725cfc5751fe4d772325fd50830
+    search: []
+  -
+    css: at
+    code: 0x40
+    uid: 874694a9126e8193bca844356d1b6328
+    search: []
+  -
+    css: arrow_left
+    code: 0x2190
+    uid: c21d309f797d3644dc8d28c4617738ce
+    search: []
+  -
+    css: arrow_up
+    code: 0x2191
+    uid: 040e72500c863813088c9f9c9415f8e9
+    search: []
+  -
+    css: arrow_right
+    code: 0x2192
+    uid: 1d35198f5190ec004dd4ec742fbe19ca
+    search: []
+  -
+    css: arrow_down
+    code: 0x2193
+    uid: 3838a5aba604532d2dbae5904615ea39
+    search: []
+  -
+    css: arrow_big_left
+    code: 0x21c7
+    uid: fd2ed680ef900acb68836a99ec1a4de7
+    search: []
+  -
+    css: arrow_big_up
+    code: 0x21c8
+    uid: d21293ba68a7dcfec696464ae64949e1
+    search: []
+  -
+    css: arrow_big_right
+    code: 0x21c9
+    uid: 54c3330bdeed0fb9042e12d16d46c9ab
+    search: []
+  -
+    css: arrow_big_down
+    code: 0x21ca
+    uid: 335c443d3231b944287309aa2593c880
+    search: []
+  -
+    css: arrow_doubled_left
+    code: 0x21d0
+    uid: 413160f2a26366d3c1d544bf1221a6ca
+    search: []
+  -
+    css: arrow_doubled_up
+    code: 0x21d1
+    uid: 985defa766987e1e038c807527100b15
+    search: []
+  -
+    css: arrow_doubled_right
+    code: 0x21d2
+    uid: e26b9d4bdcd0b60ed2cafa8f41ffc6d2
+    search: []
+  -
+    css: arrow_doubled_down
+    code: 0x21d3
+    uid: bd6176c7f1bd64eec8904241316f2f52
+    search: []
+  -
+    css: home
+    code: 0x2302
+    uid: 018571e697f22ca41803de480e10ed10
+    search: []
+  -
+    css: hourglass
+    code: 0x231b
+    uid: 35ce53990ec0892d7dcea2d0159f8dca
+    search: []
+  -
+    css: stopwatch
+    code: 0x23f1
+    uid: 53c977df16b09e3f7700a27ec90c43dc
+    search: []
+  -
+    css: clock
+    code: 0x23f2
+    uid: 981c9f3d44fd4fd6b37c0b5a981334ce
+    search: []
+  -
+    css: cloud
+    code: 0x2601
+    uid: f08fd9b6b61b3670cf88ed64da891cae
+    search: []
+  -
+    css: star
+    code: 0x2605
+    uid: b392c847bf41826598f12c02be842253
+    search: []
+  -
+    css: star_empty
+    code: 0x2606
+    uid: ee382df412dfdf65191b52ae33160abc
+    search: []
+  -
+    css: heart
+    code: 0x2665
+    uid: d02a803276d9e1f42b7393964aa22ce9
+    search: []
+  -
+    css: warning
+    code: 0x26a0
+    uid: 189edfc41118cccbeb25788fcbb403da
+    search: []
+  -
+    css: mail
+    code: 0x2709
+    uid: a17986e457f3d85f26c9c240dfd6a4ba
+    search: []
+  -
+    css: pen
+    code: 0x270f
+    uid: 0299bec28699eedda42f46c77239393e
+    search: []
+  -
+    css: check
+    code: 0x2713
+    uid: ce50292e85eb5d6ee3be61b32bf2bdf3
+    search: []
+  -
+    css: cross_mark
+    code: 0x274c
+    uid: 06301c50d89b5d3e651bd07ebd6d7de7
+    search: []
+  -
+    css: settings
+    code: 0x9881
+    uid: 7336247ba3db350dec8d6c0a47cef966
+    search: []
+  -
+    css: chevron_down
+    code: 0xf004
+    uid: d9be617b7f2fe7843118ca2d3a1b8cca
+    search: []
+  -
+    css: chevron_up
+    code: 0xf005
+    uid: 440e148d0e21100118eae7036bcd2067
+    search: []
+  -
+    css: chevron_right
+    code: 0xf006
+    uid: 37910a1398001a5ccb541cb2a253a2c7
+    search: []
+  -
+    css: chevron_left
+    code: 0xf007
+    uid: b714be5a812a474811604f700dfc87ce
+    search: []
+  -
+    css: reorder
+    code: 0xf008
+    uid: c55fdf978f617992b43ee7cbaa6ef87e
+    search: []
+  -
+    css: list
+    code: 0xf009
+    uid: 1b58555745e7378f7634ee7c63eada46
+    search: []
+  -
+    css: reorder_square
+    code: 0xf00a
+    uid: 2b6bf06e87a223ccd1ddc1874932ca86
+    search: []
+  -
+    css: reorder_square_line
+    code: 0xf00b
+    uid: 5eb43711f62fb4dcbef10d0224c28065
+    search: []
+  -
+    css: coverflow
+    code: 0xf00c
+    uid: d3fa106db96ff869d1ad75506ba5ff50
+    search: []
+  -
+    css: coverflow_line
+    code: 0xf00d
+    uid: cf0523ff3f333523eb6e9f6642dd0ddc
+    search: []
+  -
+    css: pause
+    code: 0xf00e
+    uid: 164f35b55c3346b03fa89a711a4f3980
+    search: []
+  -
+    css: play
+    code: 0xf00f
+    uid: 3711151b8b34536498e2a7f4d5188ed2
+    search: []
+  -
+    css: step_forward
+    code: 0xf010
+    uid: dcda6b27f1f63fbd7b8bf8d45cc4d340
+    search: []
+  -
+    css: step_backward
+    code: 0xf011
+    uid: 75b228ebc26946ca00360ca10f052e3c
+    search: []
+  -
+    css: fast_forward
+    code: 0xf012
+    uid: 59a3c018a7c1888658e4d93df8f7558f
+    search: []
+  -
+    css: fast_backward
+    code: 0xf013
+    uid: ee0b543733d75a60ff5647070dc1d4f8
+    search: []
+  -
+    css: cloud_upload
+    code: 0xf014
+    uid: cb0d73e6d41217d85fc81cea45dd6e91
+    search: []
+  -
+    css: cloud_download
+    code: 0xf015
+    uid: 74ba7c7ac7610225ab8655f50ad179b6
+    search: []
+  -
+    css: data_science
+    code: 0xf016
+    uid: 14c9e8bd3e747ecb08cae42f5564a671
+    search: []
+  -
+    css: data_science_black
+    code: 0xf017
+    uid: a1bd477f92e956144558e6b6c671ed6e
+    search: []
+  -
+    css: globe
+    code: 0xf018
+    uid: 117d7f4e196f826847929c6550734615
+    search: []
+  -
+    css: globe_black
+    code: 0xf019
+    uid: 77bf693b887ab9243826db6e682ea973
+    search: []
+  -
+    css: math_ico
+    code: 0xf01a
+    uid: c5fd68d8253e605e7a78a0c75255b692
+    search: []
+  -
+    css: math
+    code: 0xf01b
+    uid: ae734e5d304b9680558ab6b4449d55ee
+    search: []
+  -
+    css: math_black
+    code: 0xf01c
+    uid: b74284571c2d4d0d251bd28dace4a1ba
+    search: []
+  -
+    css: paperplane_ico
+    code: 0xf01d
+    uid: cdb000f745167bbada14e2c1d8404d98
+    search: []
+  -
+    css: paperplane
+    code: 0xf01e
+    uid: 55035f2a3ae604a7c45a9e2e626aaef5
+    search: []
+  -
+    css: paperplane_black
+    code: 0xf01f
+    uid: b50bdfb03ec13c11ff72329eb70b3e2e
+    search: []
+  -
+    css: color_balance
+    code: 0xf020
+    uid: 14e9aa28bf2a3531274f85194e733b71
+    search: []
+  -
+    css: star_half
+    code: 0xf022
+    uid: 3fba70399d61e886bce68721edbc71af
+    search: []
+  -
+    css: star_half_empty
+    code: 0xf024
+    uid: 689ef8cee6655c255ffdddf5e3188165
+    search: []
+  -
+    css: reload
+    code: 0xf025
+    uid: c74dc50bfc8aa68f0d23010ad8960cb2
+    search: []
+  -
+    css: heart_broken
+    code: 0xf028
+    uid: 862129f833b09f3d34ae39acf8484a7b
+    search: []
+  -
+    css: hashtag
+    code: 0xf029
+    uid: da72ab64b02d997ff0521339f2997233
+    search: []
+  -
+    css: reply
+    code: 0xf02a
+    uid: 00e1f929aa3c591e05de52eb94eda625
+    search: []
+  -
+    css: retweet
+    code: 0xf02b
+    uid: 26abd5de5952c46cf3a31f70330241a0
+    search: []
+  -
+    css: signin
+    code: 0xf02c
+    uid: 5adef5b3275fcd874b0815a0637c5800
+    search: []
+  -
+    css: signout
+    code: 0xf02d
+    uid: a6b6f85116fc55e4a7c83d66973035a7
+    search: []
+  -
+    css: download
+    code: 0xf02e
+    uid: 348b04ea17f646fbc6a46e20ebe4fe12
+    search: []
+  -
+    css: upload
+    code: 0xf02f
+    uid: 4f3b31017c63ba04dc4f78ce7a8f02b1
+    search: []
+  -
+    css: placepin
+    code: 0xf031
+    uid: 291e2e127efe7a6bc580af6d3ead3771
+    search: []
+  -
+    css: display_screen
+    code: 0xf032
+    uid: 700cae9dc028202c4549471b56f516dd
+    search: []
+  -
+    css: tablet
+    code: 0xf033
+    uid: 9693479d330d4e539cebdb8a7ce398f4
+    search: []
+  -
+    css: smartphone
+    code: 0xf034
+    uid: 31b90585534c8b455469d84a95f1959b
+    search: []
+  -
+    css: connected_object
+    code: 0xf035
+    uid: 8dd9284cd4fa233d3972e48b417b3ca2
+    search: []
+  -
+    css: isight
+    code: 0xf039
+    uid: e2df3c577fceec26906169fbee71721e
+    search: []
+  -
+    css: video_camera
+    code: 0xf03a
+    uid: 40c6538b0fd40540bf78373f8a1fb7af
+    search: []
+  -
+    css: random
+    code: 0xf03b
+    uid: 9c3b8d8a6d477da4d3e65b92e4e9c290
+    search: []
+  -
+    css: discussion
+    code: 0xf03d
+    uid: a8ed7903f8f548da5a8084e1773f0bbb
+    search: []
+  -
+    css: ringbell
+    code: 0xf03f
+    uid: ebb8fb741e0b3e794c90555e5f225adf
+    search: []
+  -
+    css: movie
+    code: 0xf040
+    uid: eea613bc40c77b7eab137b29dba0c62f
+    search: []
+  -
+    css: measure
+    code: 0xf044
+    uid: 6a96c51e961a2e48dfcbe2c47fd1204e
+    search: []
+  -
+    css: vector
+    code: 0xf045
+    uid: 33afa0f624ce5dae73f62a3f21a67f83
+    search: []
+  -
+    css: vector_pen
+    code: 0xf046
+    uid: 134af7f39e491515cc1a6d1eb94d9d8a
+    search: []
+  -
+    css: mute_on
+    code: 0xf047
+    uid: 5dc427ad9f0644447ca5292911c378f1
+    search: []
+  -
+    css: mute_off
+    code: 0xf048
+    uid: 858e967d1c67608546add6beebade5b3
+    search: []
+  -
+    css: sheet
+    code: 0xf04a
+    uid: 7141927f949e757c7e218cf70d9dceb4
+    search: []
+  -
+    css: dribbble_circle
+    code: 0xf04f
+    uid: c5fa38a7b77f4efad5d8691b05035c7b
+    search: []
+  -
+    css: dribbble
+    code: 0xf050
+    uid: 2653481d01fec1b76247dbeffb74033e
+    search: []
+  -
+    css: facebook_circle
+    code: 0xf051
+    uid: 96aafeab29734d1510805687f7695f8f
+    search: []
+  -
+    css: facebook
+    code: 0xf052
+    uid: 53d4dc777eeba379412efba3ee1cac9e
+    search: []
+  -
+    css: git_circle_alt
+    code: 0xf053
+    uid: 3c2cfcbad5062929d63a249f3858e38b
+    search: []
+  -
+    css: git_circle
+    code: 0xf054
+    uid: 3261112d66c6462ea20893f42b6f799b
+    search: []
+  -
+    css: git
+    code: 0xf055
+    uid: 9ea28ba01d59a4410fa3db9c02cce157
+    search: []
+  -
+    css: octopus
+    code: 0xf056
+    uid: 8669af50382b53c48b9b803692828dd0
+    search: []
+  -
+    css: twitter_circle
+    code: 0xf057
+    uid: ccf7ed45e7f05a89376f38abaa9d7d13
+    search: []
+  -
+    css: twitter
+    code: 0xf058
+    uid: ec3648a34c41b70671dc38dbb72deb04
+    search: []
+  -
+    css: google_plus_circle
+    code: 0xf059
+    uid: fef29532e2318a0c604f34947024b990
+    search: []
+  -
+    css: google_plus
+    code: 0xf05a
+    uid: c896fd4e287aebcf79803e0ece001ec1
+    search: []
+  -
+    css: linked_in_circle
+    code: 0xf05b
+    uid: d0c177a8e1688175c3445cc6b25bcc90
+    search: []
+  -
+    css: linked_in
+    code: 0xf05c
+    uid: f09340446e327a78969ea1bfac29c1a6
+    search: []
+  -
+    css: instagram
+    code: 0xf05d
+    uid: 603ebbc4040323ef53ba1dc37de67717
+    search: []
+  -
+    css: instagram_circle
+    code: 0xf05e
+    uid: 0a16125788558bcc5d70ae3f10effce5
+    search: []
+  -
+    css: mfg_icon
+    code: 0xf05f
+    uid: ca4775510f9b79d63d9ad7d258f31af9
+    search: []
+  -
+    css: mfg_icon_circle
+    code: 0xf060
+    uid: c37cda0d4ee654abafc9a896da259977
+    search: []
+  -
+    css: user
+    code: 0xf061
+    uid: 11d74f891bce30f1bdf73d3259d59ed5
+    search: []
+  -
+    css: user_male
+    code: 0xf062
+    uid: e5fdc4247f1f9b3bf98d20a954e1327c
+    search: []
+  -
+    css: user_female
+    code: 0xf063
+    uid: a6c0e3fce2fbe9ccf9b1c54c8f399106
+    search: []
+  -
+    css: users
+    code: 0xf064
+    uid: 05ef9b5e8742971aa85b23cfcbe71594
+    search: []
+  -
+    css: file_close
+    code: 0xf067
+    uid: c619e17229d6c874dfc70be359b6b3f1
+    search: []
+  -
+    css: file_alt
+    code: 0xf068
+    uid: 8e6b311d40f1002fd6de7d1bdfdc7f17
+    search: []
+  -
+    css: file_close_alt
+    code: 0xf069
+    uid: 4c4bb0011585456def6562bf27186b63
+    search: []
+  -
+    css: attachment
+    code: 0xf06a
+    uid: 9746a4ace95e1797c94cd2fe05c22485
+    search: []
+  -
+    css: _f06d
+    code: 0xf06d
+    uid: 5e1ef647438e2204c15197c6efc4151e
+    search: []
+  -
+    css: cancel_circle
+    code: 0xf06e
+    uid: 44eb9d69bf3b9b74629ce6852a2f9681
+    search: []
+  -
+    css: inbox
+    code: 0xf070
+    uid: dcbef4ff6ce6ffc7599d23e0c2b029af
+    search: []
+  -
+    css: trophy
+    code: 0xf074
+    uid: 288c5a1dd34328f851587538998e4b3e
+    search: []
+  -
+    css: unlock_alt
+    code: 0xf075
+    uid: 8167f6441d2557a90d717a7fc3248760
+    search: []
+  -
+    css: link
+    code: 0xf07b
+    uid: 1fb8776fe6f1d3bbf970996fdfcf0f94
+    search: []
+  -
+    css: warning_alt
+    code: 0xf07d
+    uid: 55389e7d75fe0458efcb909f78e7ad3f
+    search: []
+  -
+    css: magnifying_plus
+    code: 0xf07e
+    uid: baaebda77cf391a9d9ecdec4db11dcb7
+    search: []
+  -
+    css: magnifying_minus
+    code: 0xf07f
+    uid: 3a9c5809bfc7b653c3b165b979f5d93e
+    search: []
+  -
+    css: message
+    code: 0xf4ac
+    uid: 51fb22f9ff9d7f60c95ef31e4c59502d
+    search: []
+  -
+    css: file_open
+    code: 0xf4c2
+    uid: 8f28e6daf83e5c4f1fec8d170a7e21e7
+    search: []
+  -
+    css: calendar
+    code: 0xf4c5
+    uid: 4615d277156195624f442e69958ea863
+    search: []
+  -
+    css: camera
+    code: 0xf4f7
+    uid: 41c01fe7bfa79a93a2a2971a7f347fc0
+    search: []
+  -
+    css: magnifying
+    code: 0xf50d
+    uid: ec21fe3492bb04d9e29103c319556ed8
+    search: []
+  -
+    css: lock_alt
+    code: 0xf510
+    uid: b10e25220faa78c808527a4ba8b5c0f9
+    search: []
+  -
+    css: lock
+    code: 0xf512
+    uid: 7997220c4eb58edae98e04de570089c2
+    search: []
+  -
+    css: unlock
+    code: 0xf513
+    uid: e67bcab050d99eb04d44027139ae05f5
+    search: []
+
