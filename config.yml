@@ -240,6 +240,28 @@ glyphs:
 
 
   -
+    css: help-circled
+    code: 0x2753
+    uid: a3d734a5b4bec33fc3aa459d82092b23
+    search: [help, question]
+  -
+    css: help-circled-alt
+    code: 0x2754
+    uid: 3e02a8849305ac80a0e36302f461f265
+    search: [help, question]
+  -
+    css: info-circled
+    code: 0xf085
+    uid: 8f25d96c5665c84e4403538eef14ec2c
+    search: [info]
+  -
+    css: info-circled-alt
+    code: 0xf086
+    uid: 15ba51cbb4d05e6fb88f03a31a7c711c
+    search: [info]
+
+
+  -
     css: home
     code: 0x2302
     uid: 018571e697f22ca41803de480e10ed10
@@ -280,6 +302,13 @@ glyphs:
 
 
   -
+    css: eye
+    code: 0xf082
+    uid: 518ed8d836b8f75393d6d239291fedb0
+    search: [eye, subscribe]
+
+
+  -
     css: download
     code: 0xf02e
     uid: 348b04ea17f646fbc6a46e20ebe4fe12
@@ -311,6 +340,16 @@ glyphs:
     code: 0x270f
     uid: 0299bec28699eedda42f46c77239393e
     search: [pencil, write, reply, edit]
+  -
+    css: export
+    code: 0xf081
+    uid: d4824d88566b0ac66d2cdcff3408690b
+    search: [export, share]
+  -
+    css: print
+    code: 0xf087
+    uid: 60e11e35624b5012017eb10d2d7bd060
+    search: [print]
 
 
   -
@@ -337,12 +376,12 @@ glyphs:
 
   -
     css: attention
-    code: 0x26a0
+    code: 0x2757
     uid: 189edfc41118cccbeb25788fcbb403da
     search: [attention, warning, alert]
   -
     css: attention-alt
-    code: 0xf07d
+    code: 0x2755
     uid: 55389e7d75fe0458efcb909f78e7ad3f
     search: [attention, warning, alert]
 
@@ -354,10 +393,21 @@ glyphs:
 
 
   -
+    css: trash
+    code: 0xf083
+    uid: a6267a0b7262e1deffcc83076bc0e197
+    search: [trash, delete]
+
+  -
     css: doc
     code: 0xf04a
     uid: 7141927f949e757c7e218cf70d9dceb4
     search: [doc, article, sheet]
+  -
+    css: newspaper
+    code: 0xf4f0
+    uid: 18be7ed7a4baf5713f2de51bf83b12f2
+    search: [newspaper, article]
   -
     css: folder
     code: 0xf067
@@ -552,6 +602,11 @@ glyphs:
     uid: 164f35b55c3346b03fa89a711a4f3980
     search: [pause, player]
   -
+    css: stop
+    code: 0xf080
+    uid: 0a38a63796b90318b5fca493c3d4a17a
+    search: [stop, player]
+  -
     css: to-end
     code: 0xf010
     uid: dcda6b27f1f63fbd7b8bf8d45cc4d340
@@ -628,6 +683,13 @@ glyphs:
 
 
   -
+    css: flash
+    code: 0x26a1
+    uid: 77928c849ac2ae6e77d4eae9f2927c00
+    search: [flash, bolt]
+
+
+  -
     css: cloud
     code: 0x2601
     uid: f08fd9b6b61b3670cf88ed64da891cae
@@ -678,10 +740,34 @@ glyphs:
     search: [paper, plane, fly]
 
   -
+    css: fontsize
+    code: 0xf088
+    uid: 3b6f20ef4c4940aeaed84d973b2f6e64
+    search: [editor, font, size]
+
+  -
     css: color-adjust
     code: 0xf020
     uid: 14e9aa28bf2a3531274f85194e733b71
     search: [color, balance]
+
+  -
+    css: fire
+    code: 0xf525
+    uid: cc6a79edb1e82ee90129147ba089c323
+    search: [fire]
+
+  -
+    css: chart-bar
+    code: 0xf526
+    uid: c46c42ae95f46394bd2f9c9a9cc5f768
+    search: [chart, bar, diagram]
+
+  -
+    css: hdd
+    code: 0xf084
+    uid: f6650ca3f02625f4e1fcc9d4bd9b7b93
+    search: [hdd, drive, disk]
 
   -
     css: connected-object
@@ -701,7 +787,7 @@ glyphs:
     search: [vector]
   -
     css: vector-pencil
-    code: 0xf046
+    code: 0x2712
     uid: 134af7f39e491515cc1a6d1eb94d9d8a
     search: [vector, pencil]
 
@@ -715,6 +801,54 @@ glyphs:
     code: 0xf029
     uid: da72ab64b02d997ff0521339f2997233
     search: [hash]
+
+  -
+    css: female
+    code: 0x2640
+    uid: 10b2be8b48bebc1974d6f94bac9de71d
+    search: [person, human, female]
+  - 
+    css: male
+    code: 0x2642
+    uid: 23c2239369a69f752e790de95123b9e9
+    search: [person, human male]
+
+
+  -
+    css: spread
+    code: 0xf527
+    uid: 500cde26773d15aaac1bfaa2a33cc5a9
+    search: [spread, join, flow, tree]
+
+  - 
+    css: king
+    code: 0x265a
+    uid: ee8014a23bf900eae0103c7699718bc7
+    search: [king, chess]
+
+  -
+    css: anchor
+    code: 0x2693
+    uid: dd432b7aa4b7c276a475015a93dec8a3
+    search: [anchor]
+
+  -
+    css: joystick
+    code: 0xf514
+    uid: d0df4d152daa276ccf31ac968c1dd103
+    search: [joystick]
+
+  -
+    css: spinner1
+    code: 0xf528
+    uid: fccd3ea0efb711b849045bee686b1ceb
+    search: [spinner]
+  -
+    css: spinner2
+    code: 0xf529
+    uid: 9b0229b620364d8704940e408dde73fb
+    search: [spinner]
+
 
 
   -
@@ -804,6 +938,16 @@ glyphs:
     uid: 0a16125788558bcc5d70ae3f10effce5
     search: [instagram, social, logo]
 
+  -
+    css: soundcloud
+    code: 0xf089
+    uid: c7715df42d0413b3cae83d4bc3943a3e
+    search: [soundcloud, social, logo]
+  -
+    css: soundcloud-circled
+    code: 0xf08a
+    uid: a12362e50cbf1078c509d85bc3e4431f
+    search: [soundcloud, social, logo]
 
   -
     css: mfg-logo
@@ -815,3 +959,4 @@ glyphs:
     code: 0xf060
     uid: c37cda0d4ee654abafc9a896da259977
     search: [mfg, logo]
+
